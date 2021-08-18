@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png" />
+    <script defer src="./script.js"></script>
+    <title>Tip Calculator App</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="tip-calc__wrapper">
+        <h1 class="tip-calc__title">Tip Calculator</h1>
+
+        <div class="tip-calc__upper">
+          <form class="tip-calc__form">
+            <input
+              type="number"
+              id="bill-value"
+              class="tip-calc__form-input"
+              placeholder="Bill value..."
+              required
+            />
+            <input
+              type="number"
+              id="tip-value"
+              class="tip-calc__form-input"
+              placeholder="Tip percent..."
+              min="1"
+              required
+            />
+            <input
+              type="submit"
+              class="tip-calc__form-submit"
+              value="Calculate"
+            />
+          </form>
+        </div>
+
+        <div class="tip-calc__lower">
+          <h3 class="tip-calc__title tip-calc__title-lower result hidden">
+            Tip:
+          </h3>
+          <span class="tip-calc__tip result hidden"></span>
+
+          <h3 class="tip-calc__title tip-calc__title-lower result hidden">
+            Total:
+          </h3>
+          <span class="tip-calc__total result hidden"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
